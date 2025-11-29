@@ -1,5 +1,5 @@
 import Testing
-@testable import Pinata
+@testable import SwiftPinata
 
 @Suite("Pinata Tests")
 struct PinataTests {

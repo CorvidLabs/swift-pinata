@@ -1,6 +1,6 @@
 import Foundation
 import Testing
-@testable import Pinata
+@testable import SwiftPinata
 
 @Suite("Pinata Response Parsing Tests")
 struct PinataResponseTests {
