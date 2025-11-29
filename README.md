@@ -22,7 +22,12 @@ dependencies: [
 Then add the dependency to your target:
 
 ```swift
-.target(name: "MyApp", dependencies: ["Pinata"])
+.target(
+    name: "YourApp",
+    dependencies: [
+        .product(name: "Pinata", package: "swift-pinata")
+    ]
+)
 ```
 
 ## Usage
