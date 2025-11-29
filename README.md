@@ -1,4 +1,4 @@
-# Pinata
+# SwiftPinata
 
 A Swift package for interacting with the [Pinata](https://pinata.cloud) API for IPFS file storage.
 
@@ -11,12 +11,18 @@ A Swift package for interacting with the [Pinata](https://pinata.cloud) API for 
 
 ### Swift Package Manager
 
-Add Pinata to your `Package.swift`:
+Add SwiftPinata to your `Package.swift`:
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/0xLeif/Pinata", from: "0.1.0")
+    .package(url: "https://github.com/0xLeif/swift-pinata", from: "0.1.0")
 ]
+```
+
+Then add the dependency to your target:
+
+```swift
+.target(name: "MyApp", dependencies: ["SwiftPinata"])
 ```
 
 ## Usage
@@ -26,7 +32,7 @@ dependencies: [
 Create a Pinata client with your credentials:
 
 ```swift
-import Pinata
+import SwiftPinata
 
 // Using JWT (recommended)
 let pinata = Pinata(
@@ -101,4 +107,4 @@ try await pinata.deleteGroup(id: "group-id")
 
 ## License
 
-Pinata is available under the MIT license. See the LICENSE file for more info.
+SwiftPinata is available under the MIT license. See the LICENSE file for more info.

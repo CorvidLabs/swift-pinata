@@ -3,7 +3,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "Pinata",
+    name: "swift-pinata",
     platforms: [
         .iOS(.v15),
         .watchOS(.v8),
@@ -13,8 +13,8 @@ let package = Package(
     ],
     products: [
         .library(
-            name: "Pinata",
-            targets: ["Pinata"]
+            name: "SwiftPinata",
+            targets: ["SwiftPinata"]
         )
     ],
     dependencies: [
@@ -25,11 +25,11 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "Pinata"
+            name: "SwiftPinata"
         ),
         .testTarget(
-            name: "PinataTests",
-            dependencies: ["Pinata"]
+            name: "SwiftPinataTests",
+            dependencies: ["SwiftPinata"]
         )
     ]
 )
