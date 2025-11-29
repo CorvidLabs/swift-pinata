@@ -13,8 +13,8 @@ let package = Package(
     ],
     products: [
         .library(
-            name: "SwiftPinata",
-            targets: ["SwiftPinata"]
+            name: "Pinata",
+            targets: ["Pinata"]
         )
     ],
     dependencies: [
@@ -25,11 +25,11 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "SwiftPinata"
+            name: "Pinata"
         ),
         .testTarget(
-            name: "SwiftPinataTests",
-            dependencies: ["SwiftPinata"]
+            name: "PinataTests",
+            dependencies: ["Pinata"]
         )
     ]
 )
