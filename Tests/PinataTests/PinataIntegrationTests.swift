@@ -1,6 +1,6 @@
 import Foundation
 import Testing
-@testable import SwiftPinata
+@testable import Pinata
 
 /// Integration tests that require a valid Pinata JWT.
 ///
