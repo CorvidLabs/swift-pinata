@@ -5,10 +5,10 @@ import PackageDescription
 let package = Package(
     name: "swift-pinata",
     platforms: [
-        .iOS(.v15),
-        .watchOS(.v8),
-        .macOS(.v12),
-        .tvOS(.v15),
+        .iOS(.v16),
+        .macOS(.v13),
+        .tvOS(.v16),
+        .watchOS(.v9),
         .visionOS(.v1)
     ],
     products: [
@@ -19,17 +19,23 @@ let package = Package(
     ],
     dependencies: [
         .package(
-            url: "https://github.com/apple/swift-docc-plugin",
-            from: "1.4.0"
+            url: "https://github.com/swiftlang/swift-docc-plugin",
+            from: "1.4.3"
         )
     ],
     targets: [
         .target(
-            name: "Pinata"
+            name: "Pinata",
+            swiftSettings: [
+                .enableUpcomingFeature("StrictConcurrency")
+            ]
         ),
         .testTarget(
             name: "PinataTests",
-            dependencies: ["Pinata"]
+            dependencies: ["Pinata"],
+            swiftSettings: [
+                .enableUpcomingFeature("StrictConcurrency")
+            ]
         )
     ]
 )
