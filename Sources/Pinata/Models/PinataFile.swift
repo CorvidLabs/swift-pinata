@@ -1,6 +1,8 @@
 import Foundation
 
-/// Represents a file stored on Pinata.
+/**
+ Represents a file stored on Pinata.
+ */
 public struct PinataFile: Codable, Sendable, Identifiable {
     /// The unique identifier for the file.
     public let id: String
@@ -44,7 +46,9 @@ public struct PinataFile: Codable, Sendable, Identifiable {
 
 // MARK: - Swap Types
 
-/// Represents a CID swap mapping.
+/**
+ Represents a CID swap mapping.
+ */
 public struct PinataSwap: Codable, Sendable {
     /// The CID that is being pointed to.
     public let mappedCid: String
@@ -60,19 +64,25 @@ public struct PinataSwap: Codable, Sendable {
 
 // MARK: - Response Types
 
-/// Response wrapper for file operations.
+/**
+ Response wrapper for file operations.
+ */
 struct PinataFileResponse: Codable, Sendable {
     /// The file data.
     let data: PinataFile
 }
 
-/// Response wrapper for listing files.
+/**
+ Response wrapper for listing files.
+ */
 struct PinataFilesResponse: Codable, Sendable {
     /// The files data.
     let data: PinataFilesData
 }
 
-/// Container for file list data.
+/**
+ Container for file list data.
+ */
 public struct PinataFilesData: Codable, Sendable {
     /// The files in this response.
     public let files: [PinataFile]
@@ -86,13 +96,17 @@ public struct PinataFilesData: Codable, Sendable {
     }
 }
 
-/// Response wrapper for swap operations.
+/**
+ Response wrapper for swap operations.
+ */
 struct PinataSwapResponse: Codable, Sendable {
     /// The swap data.
     let data: PinataSwap
 }
 
-/// Response wrapper for swap history.
+/**
+ Response wrapper for swap history.
+ */
 struct PinataSwapHistoryResponse: Codable, Sendable {
     /// The swap history data.
     let data: [PinataSwap]

@@ -32,11 +32,13 @@ public actor Pinata {
     /// JSON encoder for request bodies.
     private let encoder: JSONEncoder
 
-    /// Creates a new Pinata client.
-    ///
-    /// - Parameters:
-    ///   - configuration: The configuration containing credentials and settings.
-    ///   - session: Optional custom URL session. Defaults to `.shared`.
+    /**
+     Creates a new Pinata client.
+
+     - Parameters:
+       - configuration: The configuration containing credentials and settings.
+       - session: Optional custom URL session. Defaults to `.shared`.
+     */
     public init(
         configuration: PinataConfiguration,
         session: URLSession = .shared
@@ -74,12 +76,14 @@ public actor Pinata {
         self.encoder = encoder
     }
 
-    /// Creates a new Pinata client with JWT authentication.
-    ///
-    /// - Parameters:
-    ///   - jwt: The JWT token.
-    ///   - gatewayDomain: Optional custom gateway domain.
-    ///   - session: Optional custom URL session. Defaults to `.shared`.
+    /**
+     Creates a new Pinata client with JWT authentication.
+
+     - Parameters:
+       - jwt: The JWT token.
+       - gatewayDomain: Optional custom gateway domain.
+       - session: Optional custom URL session. Defaults to `.shared`.
+     */
     public init(
         jwt: String,
         gatewayDomain: String? = nil,
@@ -91,13 +95,15 @@ public actor Pinata {
         )
     }
 
-    /// Creates a new Pinata client with API key authentication.
-    ///
-    /// - Parameters:
-    ///   - apiKey: The API key.
-    ///   - apiSecret: The API secret.
-    ///   - gatewayDomain: Optional custom gateway domain.
-    ///   - session: Optional custom URL session. Defaults to `.shared`.
+    /**
+     Creates a new Pinata client with API key authentication.
+
+     - Parameters:
+       - apiKey: The API key.
+       - apiSecret: The API secret.
+       - gatewayDomain: Optional custom gateway domain.
+       - session: Optional custom URL session. Defaults to `.shared`.
+     */
     public init(
         apiKey: String,
         apiSecret: String,
@@ -607,10 +613,14 @@ public extension Pinata {
 // MARK: - Private Helpers
 
 extension Pinata {
-    /// Maximum number of retry attempts for transient failures.
+    /**
+     Maximum number of retry attempts for transient failures.
+     */
     private static let maxRetries = 3
 
-    /// Base delay between retries in nanoseconds (500ms).
+    /**
+     Base delay between retries in nanoseconds (500ms).
+     */
     private static let baseRetryDelay: UInt64 = 500_000_000
 
     private func applyAuthentication(to request: inout URLRequest) {

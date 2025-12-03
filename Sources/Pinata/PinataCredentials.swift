@@ -1,6 +1,8 @@
 import Foundation
 
-/// Network type for file uploads.
+/**
+ Network type for file uploads.
+ */
 public enum PinataNetwork: String, Sendable {
     /// Public IPFS network - files are accessible via any IPFS gateway.
     case `public` = "public"
@@ -9,7 +11,9 @@ public enum PinataNetwork: String, Sendable {
     case `private` = "private"
 }
 
-/// Credentials for authenticating with the Pinata API.
+/**
+ Credentials for authenticating with the Pinata API.
+ */
 public enum PinataCredentials: Sendable {
     /// JWT-based authentication (recommended).
     case jwt(String)

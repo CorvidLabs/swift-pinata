@@ -1,6 +1,8 @@
 import Foundation
 
-/// Represents a group for organizing files on Pinata.
+/**
+ Represents a group for organizing files on Pinata.
+ */
 public struct PinataGroup: Codable, Sendable, Identifiable {
     /// The unique identifier for the group.
     public let id: String
@@ -18,19 +20,25 @@ public struct PinataGroup: Codable, Sendable, Identifiable {
     }
 }
 
-/// Response wrapper for group operations.
+/**
+ Response wrapper for group operations.
+ */
 struct PinataGroupResponse: Codable, Sendable {
     /// The group data.
     let data: PinataGroup
 }
 
-/// Response wrapper for listing groups.
+/**
+ Response wrapper for listing groups.
+ */
 struct PinataGroupsResponse: Codable, Sendable {
     /// The groups data.
     let data: PinataGroupsData
 }
 
-/// Container for group list data.
+/**
+ Container for group list data.
+ */
 public struct PinataGroupsData: Codable, Sendable {
     /// The groups in this response.
     public let groups: [PinataGroup]

@@ -23,10 +23,13 @@ public struct PinataConfiguration: Sendable {
     /// The gateway domain for retrieving files (e.g., "your-gateway.mypinata.cloud").
     public let gatewayDomain: String?
 
-    /// Creates a new Pinata configuration.
-    /// - Parameters:
-    ///   - credentials: The credentials for authenticating with the API.
-    ///   - gatewayDomain: Optional custom gateway domain for file retrieval.
+    /**
+     Creates a new Pinata configuration.
+
+     - Parameters:
+       - credentials: The credentials for authenticating with the API.
+       - gatewayDomain: Optional custom gateway domain for file retrieval.
+     */
     public init(
         credentials: PinataCredentials,
         gatewayDomain: String? = nil
@@ -35,11 +38,15 @@ public struct PinataConfiguration: Sendable {
         self.gatewayDomain = gatewayDomain
     }
 
-    /// Creates a configuration with JWT authentication.
-    /// - Parameters:
-    ///   - jwt: The JWT token.
-    ///   - gatewayDomain: Optional custom gateway domain.
-    /// - Returns: A configured `PinataConfiguration`.
+    /**
+     Creates a configuration with JWT authentication.
+
+     - Parameters:
+       - jwt: The JWT token.
+       - gatewayDomain: Optional custom gateway domain.
+
+     - Returns: A configured `PinataConfiguration`.
+     */
     public static func jwt(
         _ token: String,
         gatewayDomain: String? = nil
@@ -50,12 +57,16 @@ public struct PinataConfiguration: Sendable {
         )
     }
 
-    /// Creates a configuration with API key authentication.
-    /// - Parameters:
-    ///   - key: The API key.
-    ///   - secret: The API secret.
-    ///   - gatewayDomain: Optional custom gateway domain.
-    /// - Returns: A configured `PinataConfiguration`.
+    /**
+     Creates a configuration with API key authentication.
+
+     - Parameters:
+       - key: The API key.
+       - secret: The API secret.
+       - gatewayDomain: Optional custom gateway domain.
+
+     - Returns: A configured `PinataConfiguration`.
+     */
     public static func apiKey(
         key: String,
         secret: String,

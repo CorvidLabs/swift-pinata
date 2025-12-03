@@ -1,6 +1,8 @@
 import Foundation
 
-/// Errors that can occur when interacting with the Pinata API.
+/**
+ Errors that can occur when interacting with the Pinata API.
+ */
 public enum PinataError: Error, Sendable {
     /// The request was invalid or malformed.
     case badRequest(String)
