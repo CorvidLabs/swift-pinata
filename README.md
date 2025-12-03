@@ -1,5 +1,9 @@
 # Pinata
 
+[![CI](https://img.shields.io/github/actions/workflow/status/CorvidLabs/swift-pinata/ci.yml?label=CI&branch=main)](https://github.com/CorvidLabs/swift-pinata/actions/workflows/ci.yml)
+[![License](https://img.shields.io/github/license/CorvidLabs/swift-pinata)](https://github.com/CorvidLabs/swift-pinata/blob/main/LICENSE)
+[![Version](https://img.shields.io/github/v/release/CorvidLabs/swift-pinata)](https://github.com/CorvidLabs/swift-pinata/releases)
+
 A Swift package for interacting with the [Pinata](https://pinata.cloud) API for IPFS file storage.
 
 ## Requirements
