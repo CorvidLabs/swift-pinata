@@ -1,6 +1,7 @@
 # Pinata
 
-[![CI](https://img.shields.io/github/actions/workflow/status/CorvidLabs/swift-pinata/ci.yml?label=CI&branch=main)](https://github.com/CorvidLabs/swift-pinata/actions/workflows/ci.yml)
+[![macOS](https://img.shields.io/github/actions/workflow/status/CorvidLabs/swift-pinata/macOS.yml?label=macOS&branch=main)](https://github.com/CorvidLabs/swift-pinata/actions/workflows/macOS.yml)
+[![Ubuntu](https://img.shields.io/github/actions/workflow/status/CorvidLabs/swift-pinata/ubuntu.yml?label=Ubuntu&branch=main)](https://github.com/CorvidLabs/swift-pinata/actions/workflows/ubuntu.yml)
 [![License](https://img.shields.io/github/license/CorvidLabs/swift-pinata)](https://github.com/CorvidLabs/swift-pinata/blob/main/LICENSE)
 [![Version](https://img.shields.io/github/v/release/CorvidLabs/swift-pinata)](https://github.com/CorvidLabs/swift-pinata/releases)
 
