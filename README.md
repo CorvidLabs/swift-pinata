@@ -5,6 +5,8 @@
 [![License](https://img.shields.io/github/license/CorvidLabs/swift-pinata)](https://github.com/CorvidLabs/swift-pinata/blob/main/LICENSE)
 [![Version](https://img.shields.io/github/v/release/CorvidLabs/swift-pinata)](https://github.com/CorvidLabs/swift-pinata/releases)
 
+> **Pre-1.0 Notice**: This library is under active development. The API may change between minor versions until 1.0.
+
 A Swift package for interacting with the [Pinata](https://pinata.cloud) API for IPFS file storage.
 
 ## Requirements
