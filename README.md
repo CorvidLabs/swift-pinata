@@ -22,7 +22,7 @@ Add Pinata to your `Package.swift`:
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/0xLeif/swift-pinata", from: "0.1.0")
+    .package(url: "https://github.com/CorvidLabs/swift-pinata", from: "0.2.0")
 ]
 ```
 
