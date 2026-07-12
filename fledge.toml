@@ -1,0 +1,9 @@
+[tasks.build]
+cmd = "swift build"
+description = "Build the Swift package"
+[tasks.test]
+cmd = "env -u PINATA_JWT -u PINATA_GATEWAY swift test"
+description = "Run deterministic tests without live Pinata credentials"
+[lanes.verify]
+description = "Build and test swift-pinata without crossing the live API boundary"
+steps = ["build", "test"]
