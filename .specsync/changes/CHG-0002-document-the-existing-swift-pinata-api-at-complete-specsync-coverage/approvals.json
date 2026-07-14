@@ -1,0 +1,18 @@
+{
+  "approvals": [
+    {
+      "gate": "definition",
+      "actor": "user:0xLeif",
+      "timestamp": 1784000653,
+      "digest": "01f4c596e2d102d03bc2cb961da4de457595a73b36ba18f5a5634c91a1a4ff76",
+      "note": "Definition approved after all six source files, parser-visible exports, requirements, and credential boundaries were documented; hosted CI and closing approval remain pending."
+    },
+    {
+      "gate": "acceptance",
+      "actor": "user:0xLeif",
+      "timestamp": 1784000713,
+      "digest": "eba6ae632401454ba3942bef7b83d882dafa21de5807b250fbc9c36c7f5207ca",
+      "note": "Closing approval recorded after strict 100 percent SpecSync validation, native Swift build, and credential-free Swift tests passed; the runner reported 30 test declarations across three suites while the 13 live integration cases remained skipped without credentials."
+    }
+  ]
+}

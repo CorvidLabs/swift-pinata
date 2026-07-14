@@ -5,9 +5,9 @@ artifact: tasks
 
 # Tasks
 
-- [x] Adopt SpecSync 5.0.1 at advisory threshold zero.
+- [x] Adopt SpecSync 5.0.1 at complete contract coverage.
 - [x] Install all four agent integrations.
 - [x] Add Trust, Augur, Attest, and native Fledge verification.
 - [x] Preserve existing workflows and network authorization boundaries.
-- [ ] Record definition approval.
-- [ ] Record verification and closing approval.
+- [x] Complete migration configuration and source-backed contract inputs before lifecycle approval.
+- [x] Configure deterministic verification without claiming credentialed hosted execution.

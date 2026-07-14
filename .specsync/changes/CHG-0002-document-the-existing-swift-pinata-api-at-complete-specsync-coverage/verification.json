@@ -1,0 +1,30 @@
+{
+  "timestamp": 1784000707,
+  "commit": "5816dab3ebc5bda7a8e8d2dae684e35ddd94996e",
+  "contract_digest": "01f4c596e2d102d03bc2cb961da4de457595a73b36ba18f5a5634c91a1a4ff76",
+  "workspace_digest": "a9a19741012b9d49ce9647d4b5a1ab6e398b8148ef03d191c17b286758545148",
+  "acceptance_input_digest": "2580233081a64324feab4c1abacbcaca6e2bc33f382490649f9f3d805752925f",
+  "passed": true,
+  "commands": [
+    {
+      "command": "swift build",
+      "success": true,
+      "exit_code": 0
+    },
+    {
+      "command": "env -u PINATA_JWT -u PINATA_GATEWAY swift test",
+      "success": true,
+      "exit_code": 0
+    }
+  ],
+  "requirement_ids": [
+    "REQ-pinata-001",
+    "REQ-pinata-002",
+    "REQ-pinata-003",
+    "REQ-pinata-004",
+    "REQ-pinata-005",
+    "REQ-pinata-006",
+    "REQ-pinata-007",
+    "REQ-pinata-008"
+  ]
+}

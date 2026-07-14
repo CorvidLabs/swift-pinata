@@ -7,5 +7,5 @@ artifact: design
 
 Preserve all existing workflows. Add macOS Trust using full history and the
 immutable v1.0.0 commit. Trust delegates deterministic build/tests to Fledge,
-blocks risk, uses progressive provenance, and leaves Pages and live/network
+blocks risk, enforces complete contract coverage, uses progressive provenance, and leaves Pages and live/network
 verification independently controlled.

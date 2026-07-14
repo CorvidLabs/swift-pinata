@@ -3,8 +3,8 @@
   "enabled": true,
   "require_change_for_meaningful_files": true,
   "meaningful_paths": [
-    "src/",
-    "tests/",
+    "Sources/",
+    "Tests/",
     "site/",
     ".github/",
     "Cargo.toml",
@@ -32,7 +32,8 @@
     "specs/"
   ],
   "verification_commands": [
-    "swift build && env -u PINATA_JWT -u PINATA_GATEWAY swift test"
+    "swift build",
+    "env -u PINATA_JWT -u PINATA_GATEWAY swift test"
   ],
   "custom_artifacts": {},
   "principles_file": null
