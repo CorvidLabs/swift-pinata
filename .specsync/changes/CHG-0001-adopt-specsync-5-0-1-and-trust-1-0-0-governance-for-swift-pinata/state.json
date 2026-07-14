@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "id": "CHG-0001-adopt-specsync-5-0-1-and-trust-1-0-0-governance-for-swift-pinata",
+  "slug": "adopt-specsync-5-0-1-and-trust-1-0-0-governance-for-swift-pinata",
+  "title": "Adopt SpecSync 5.0.1 and Trust 1.0.0 governance for swift-pinata",
+  "description": "Adopt SpecSync 5.0.1 and Trust 1.0.0 governance for swift-pinata",
+  "kind": "migration",
+  "state": "accepted",
+  "base_commit": "8284ad4aaa9aafeac1601b1f39f7635fe2e55bd5",
+  "created_at": 1783885937,
+  "updated_at": 1784000732,
+  "affected_specs": [],
+  "affected_paths": [
+    "Sources/",
+    "Tests/",
+    "Package.swift",
+    "Package.resolved",
+    "fledge.toml",
+    ".github/",
+    ".specsync/",
+    ".trust.toml",
+    ".augur.toml",
+    ".attest.json",
+    "AGENTS.md"
+  ],
+  "no_spec_change": true,
+  "no_spec_change_rationale": "This migration changes repository governance only and does not alter the existing Swift package API or behavior",
+  "acceptance_criteria": [
+    "SpecSync lifecycle passes at 100 percent coverage; all four agents are installed; Trust doctor and macOS Swift build pass; deterministic tests pass with live Pinata credentials explicitly unset; existing platform and documentation workflows remain unchanged; immutable Trust runs on every pull request"
+  ],
+  "selected_artifacts": [
+    "context",
+    "research",
+    "design",
+    "plan",
+    "tasks",
+    "testing",
+    "docs"
+  ],
+  "dependencies": [],
+  "answers": {
+    "architecture_risk": "yes",
+    "public_contract": "no"
+  }
+}

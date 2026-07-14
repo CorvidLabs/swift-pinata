@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "id": "CHG-0002-document-the-existing-swift-pinata-api-at-complete-specsync-coverage",
+  "slug": "document-the-existing-swift-pinata-api-at-complete-specsync-coverage",
+  "title": "Document the existing Swift Pinata API at complete SpecSync coverage",
+  "description": "Document the existing Swift Pinata API at complete SpecSync coverage",
+  "kind": "documentation",
+  "state": "accepted",
+  "base_commit": "5816dab3ebc5bda7a8e8d2dae684e35ddd94996e",
+  "created_at": 1784000334,
+  "updated_at": 1784000713,
+  "affected_specs": [
+    "pinata"
+  ],
+  "affected_paths": [
+    "specs/pinata",
+    ".trust.toml"
+  ],
+  "no_spec_change": false,
+  "no_spec_change_rationale": null,
+  "acceptance_criteria": [
+    "An active canonical companion covers all six Swift implementation files and every parser-visible export at 100 percent; source-backed requirements map credentials, configuration, file operations, swaps, groups, response models, authentication, retries, and errors to deterministic native tests or the explicitly credential-gated integration boundary; strict SpecSync scores A without scaffolds; Sources and Tests remain unchanged"
+  ],
+  "selected_artifacts": [
+    "context",
+    "docs"
+  ],
+  "dependencies": [],
+  "answers": {
+    "architecture_risk": "no",
+    "public_contract": "no"
+  }
+}
